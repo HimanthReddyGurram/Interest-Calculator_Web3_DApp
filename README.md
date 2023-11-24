@@ -1,10 +1,26 @@
-# Interest Calculator
+# Interest Calculator (Blockchain)
 
-Welcome to your new dbank project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+This a decentralized to-do list web3 application where we can see the simple interest and compound interest applying to a certain amount.
+* Whenever we click the simple interest button we will be shown the total amount with simple interest at that point of time.
+* But Whenever we click the compound interest button we will be shown the total amount with compound interest at that point of time and when we click the button again it will then add interest from the past point when we clicked that button to present with capital as the old value when we last clicked that button.
+* We can even top-up and remove money.
+* The interest rate for both is 1 percent for sec in this application.
+
+This project uses motoko as a backend and interface it with our front end. 
+
+(This website has a backend so the data doesnot get lost when refreshing websites or servers.)
+
+## Technologies
+* Web 3.0
+* Blockchain
+  - Motoko
+* Node.js
+  - Javascript
+
 
 To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
 
-To learn more before you start working with dbank, see the following documentation available online:
+To learn more before you start working with dkeeper, see the following documentation available online:
 
 - [Quick Start](https://sdk.dfinity.org/docs/quickstart/quickstart-intro.html)
 - [SDK Developer Tools](https://sdk.dfinity.org/docs/developers-guide/sdk-guide.html)
@@ -15,7 +31,16 @@ To learn more before you start working with dbank, see the following documentati
 If you want to start working on your project right away, you might want to try the following commands:
 
 ```bash
-cd dbank/
+# Clone this repository
+git clone https://github.com/HimanthReddyGurram/Interest-Calculator_Web3_DApp.git
+
+# Go into the repository
+$ cd Interest-Calculator_Web3_DApp.git
+
+# Install dependencies
+npm install
+
+#for help(optional)
 dfx help
 dfx config --help
 ```
@@ -28,7 +53,8 @@ If you want to test your project locally, you can use the following commands:
 # Starts the replica, running in the background
 dfx start --background
 
-# Deploys your canisters to the replica and generates your candid interface
+# Open another terminal
+#Deploys your canisters to the replica and generates your candid interface
 dfx deploy
 ```
 
