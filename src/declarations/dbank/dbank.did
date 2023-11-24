@@ -1,0 +1,8 @@
+service : {
+  checkBalComp: () -> (float64) query;
+  checkBalSimp: () -> (float64) query;
+  compound: () -> () oneway;
+  simple: () -> () oneway;
+  topUp: (float64) -> (text);
+  withDraw: (float64) -> (text);
+}
